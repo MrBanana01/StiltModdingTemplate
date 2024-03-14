@@ -1,6 +1,5 @@
 ﻿using MelonLoader;
-using StiltModdingAPI;
-using StiltModdingAPI.Behaviours.Events;
+using UnityEngine;
 
 [assembly: MelonInfo(typeof(StiltModdingTemplate.ModLoader), "modname", "1.0.0", "modauthor")]
 [assembly: MelonGame("Rekt Games", "Stilt")]
@@ -8,15 +7,23 @@ using StiltModdingAPI.Behaviours.Events;
 //Change the namespace to whatever you want
 namespace StiltModdingTemplate {
     public class ModLoader : MelonMod {
+        public static ModLoader instance;
+        public GameObject ModManager;
+
         public override void OnLateInitializeMelon() {
             base.OnLateInitializeMelon();
-            StiltEventHandler.instance.OnAPILoaded += StiltAPILoaded;
+            instance = this;
+            CreateManagerForObject();
         }
 
-        //This method runs when the StiltModdingAPI successfully loads
-        void StiltAPILoaded() {
-            bool SuccessfullyLoadedScript = Utils.RegisterStiltScript<Main>();
-            //The bool turns true if the script successfully loads and false if not.
+        void CreateManagerForObject() {
+            //Name this whatever you want
+            ModManager = new GameObject("ModManagerObject");
+
+            //Put all the MonoBehaviour scripts you want to load here
+            ModManager.AddComponent<Main>();
+
+            GameObject.DontDestroyOnLoad(ModManager);
         }
     }
 }

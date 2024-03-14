@@ -13,9 +13,7 @@ namespace StiltModdingTemplate {
             StiltEventHandler.instance.OnAPILoaded += StiltAPILoaded;
         }
 
-        /// <summary>
-        /// This method runs when the StiltModdingAPI successfully loads
-        /// </summary>
+        //This method runs when the StiltModdingAPI successfully loads
         void StiltAPILoaded() {
             bool SuccessfullyLoadedScript = Utils.RegisterStiltScript<Main>();
             //The bool turns true if the script successfully loads and false if not.

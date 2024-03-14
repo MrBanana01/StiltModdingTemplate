@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StiltModdingTemplate", "StiltModdingTemplate\StiltModdingTemplate.csproj", "{741B8AA7-6559-47F8-AEF4-FEF8C1E90D85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{741B8AA7-6559-47F8-AEF4-FEF8C1E90D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741B8AA7-6559-47F8-AEF4-FEF8C1E90D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741B8AA7-6559-47F8-AEF4-FEF8C1E90D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741B8AA7-6559-47F8-AEF4-FEF8C1E90D85}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F58AA48A-01E7-4052-BB8D-A6C46A8F28EB}
+	EndGlobalSection
+EndGlobal
